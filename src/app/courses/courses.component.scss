@@ -1,0 +1,193 @@
+
+#sub-header {
+    min-height: 50vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('/assets/eduford_img/background.jpg');
+}
+#sub-header h1{
+    margin-top: 100px;
+}
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav img {
+    width: 150px;
+}
+
+nav ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+}
+
+
+
+
+.fa-times {
+    display: none;
+}
+
+.fa-bars {
+    display: none;
+}
+
+// ------Media Query---------------------
+@media screen and (max-width:700px) {
+    
+    .row{
+        flex-direction: column ;
+    }
+
+    .nav-links ul li {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        right: -200px;
+        top: 0;
+        width: 200px;
+        z-index: 1;
+        transition: 0.5s;
+    }
+
+    .nav-links ul li {
+        padding: 14px 10px;
+    }
+
+    .nav-links ul li a {
+        font-size: 14px;
+    }
+
+    .fa-times {
+        display: block;
+        color: white;
+        // margin: 10px;
+        text-align: left;
+        margin: 25px;
+        font-size: 22px;
+    }
+
+    .fa-bars {
+        display: block;
+        color: white;
+    }
+
+}
+
+
+// footer
+#footer{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+#footer h4{
+    margin: 10px 0;
+    font-size: 20px;
+}
+#footer p{
+    margin-bottom: 90px;
+}
+
+#about-us{
+  width: 80%;
+  margin: auto;
+  padding-bottom: 50px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.about-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.about-col img{
+    width: 100%;
+    order: 1 ;
+}
+.btn-explore-now{
+    padding: 12px 20px;
+    border: 2px solid tomato;
+    margin-top: 30px;
+    color: tomato;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+}
+.btn-explore-now:hover{
+    background-color: tomato;
+    color: white;
+}
+// Course
+#course {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+#course h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+#course p {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.course-col {
+    background-color: #f3eaec;
+    padding: 10px;
+    margin: 10px;
+    flex-basis: 31%;
+    border-radius: 8px;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+
+.course-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
